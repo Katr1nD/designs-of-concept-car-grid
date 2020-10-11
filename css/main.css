@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,700;1,400&display=swap');
+
+body {
+    display: grid;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background: #e2e7ec;
+}
+
+.wrapper {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 360px);
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    font-family: 'Libre Franklin', 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    width: 1600px;
+    margin: 90px 0;
+}
+
+.wrapper>div:first-child {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-image: url('../img/Topic-1.png');
+    align-content: end;
+}
+
+.past-topics {
+    align-content: unset;
+    justify-content: stretch;
+}
+
+.past-background-image {
+    height: 250px;
+}
+
+.topics {
+    display: grid;
+    background: #ffffff;
+    height: 540px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+p,
+h1,
+h3,
+img {
+    padding-left: 30px;
+}
+
+h1 {
+    padding-right: 200px;
+    margin-top: 0;
+    color: #ffffff;
+}
+
+p {
+    opacity: 0.5;
+}
